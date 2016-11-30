@@ -18,6 +18,7 @@ USER $NB_USER
 # Remove pyqt and qt pulled in for matplotlib since we're only ever going to
 # use notebook-friendly backends in these images
 RUN conda install --quiet --yes \
+    'obspy' \
     'nomkl' \
     'ipywidgets=5.2*' \
     'pandas=0.19*' \
@@ -51,6 +52,7 @@ RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix
 # Remove pyqt and qt pulled in for matplotlib since we're only ever going to
 # use notebook-friendly backends in these images
 RUN conda create --quiet --yes -p $CONDA_DIR/envs/python2 python=2.7 \
+    'obspy' \
     'nomkl' \
     'ipython=4.2*' \
     'ipywidgets=5.2*' \

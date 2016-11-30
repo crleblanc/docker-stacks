@@ -5,6 +5,8 @@
 
 Opinionated stacks of ready-to-run Jupyter applications in Docker.
 
+Forked from jupyter/docker-stacks to add the obspy package for use with Jupyter notebooks.
+
 ## Quick Start
 
 If you're familiar with Docker, have it configured, and know exactly what you'd like to run, this one-liner should work in most cases:
